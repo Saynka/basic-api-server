@@ -8,6 +8,8 @@
 
 - [first push](https://github.com/Saynka/basic-api-server/pull/1)
 
+- [first submission push]()
+
 ### Links and Resources
 
 - [ci/cd](https://github.com/Saynka/basic-api-server/actions) (GitHub Actions)
@@ -15,6 +17,28 @@
 - [front-end application](http://xyz.com) (when applicable)
 
 ### Setup
+
+├── .gitignore
+├── .eslintrc.json
+├── __tests__
+│   ├── server.test.js
+│   ├── logger.test.js
+├── src
+│   ├── error-handlers
+│   │   ├── 404.js
+│   │   ├── 500.js
+│   ├── middleware
+│   │   ├── logger.js
+│   │   ├── validator.js
+│   ├── models
+│   │   ├── food.js
+│   │   ├── clothes.js
+│   ├── routes
+│   │   ├── food.js
+│   │   ├── clothes.js
+│   ├── server.js
+├── index.js
+└── package.json
 
 #### `.env` requirements (where applicable)
 
@@ -43,4 +67,4 @@
 
 #### UML
 
-![UML Example](./reference/uml-1.png)
+![UML Example](./assests/crud.jpg)

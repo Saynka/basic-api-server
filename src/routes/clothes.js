@@ -1,19 +1,19 @@
 'use strict';
 
 const express = require('express');
-const CrudModel = require('../models/food.js');
-const Cruds = require('../models/food.js');
+const CrudModels = require('../models/clothes.js');
+const Cruds = require('../models/clothes.js');
 // here, we instantiate the new things model
 const items = new Cruds();
 
 const router = express.Router();
 
 // routes
-router.get('/food', getThings); // 1: hit the route -> REST
-router.get('/food/:id', getOneThing);
-router.post('/food', createThing);
-router.put('/food/:id', updateThing);
-router.delete('/food/:id', deleteThing);
+router.get('/clothes', getThings); // 1: hit the route -> REST
+router.get('/clothes/:id', getOneThing);
+router.post('/clothes', createThing);
+router.put('/clothes/:id', updateThing);
+router.delete('/clothes/:id', deleteThing);
 
 function getThings(req, res) {
   // 2: get all items from the database -> CRUD

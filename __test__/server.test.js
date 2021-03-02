@@ -71,5 +71,61 @@ describe('web server', () => {
     expect(getResponse.body.length).toEqual(0);
 
   });
+});
+
+
+it('should respond with a 404 on an invalid method', async () => {
+  const response = await mockRequest.put('/clothes');
+  expect(response.status).toBe(404);
+});
+
+it('can create a record', async () => {
+  const data = {
+    name: 'pants',
+    type: 'denium'
+  };
+
+const response = await mockRequest.post('/clothes').send(data);
+expect(response.status).toBe(200);
+
+//Did we get an ID?
+expect(response.body.id).toBeDefined();
+
+// Is the data we sent in the database?
+Object.keys(response.body.data).forEach(key => {
+  expect(response.body.data[key]).toEqual(data[key])
+})
+});
+
+it('can get list of records', async () => {
+const response = await mockRequest.get('/clothes');
+expect(response.status).toBe(200);
+expect(Array.isArray(response.body)).toBeTruthy();
+expect(response.body.length).toEqual(1);
+});
+
+it('can get a record', async () => {
+const response = await mockRequest.get('/clothes/1');
+expect(response.status).toBe(200);
+expect(typeof response.body).toEqual('object');
+expect(response.body.id).toEqual(1);
+});
+
+it('can update a record', async () => {
+const data = { name: "jacket" };
+const response = await mockRequest.put('/clothes/1').send(data);
+expect(response.status).toBe(200);
+expect(typeof response.body).toEqual('object');
+expect(response.body.id).toEqual(1);
+expect(response.body.data.name).toEqual("jacket");
+});
+
+it('can delete a record', async () => {
+const response = await mockRequest.delete('/clothes/1');
+expect(response.status).toBe(200);
+expect(response.body).toBeFalsy();
+
+const getResponse = await mockRequest.get('/clothes');
+expect(getResponse.body.length).toEqual(0);
 
 });

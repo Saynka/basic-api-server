@@ -4,7 +4,7 @@ class CrudModel {
     constructor() {
         this.id = 0;
         this.db = [];
-        this.fields = ['name', 'calories', 'type'];
+        this.fields = ['name', 'type'];
       }
     
       get(id) {
@@ -20,9 +20,11 @@ class CrudModel {
           id: ++this.id,
           data: {}
         };
-    
+        console.log(obj); 
+        
         // Only add proper fields to the data
         this.fields.forEach(field => record.data[field] = obj[field]);
+        console.log(record);
     
         this.db.push(record)
         return record;
@@ -51,6 +53,5 @@ class CrudModel {
     
     
 }
-
 
 module.exports = CrudModel;
