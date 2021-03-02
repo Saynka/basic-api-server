@@ -1,12 +1,16 @@
-# LAB - Class xx
+# LAB - 3
 
-## Project: Project Name Here
+## Project: Basic-Api-Server
 
-### Author: Student/Group Name
+### Author: Kale Lesko 
+
+### Pull Requests
+
+- [first push](https://github.com/Saynka/basic-api-server/pull/1)
 
 ### Links and Resources
 
-- [ci/cd](http://xyz.com) (GitHub Actions)
+- [ci/cd](https://github.com/Saynka/basic-api-server/actions) (GitHub Actions)
 - [back-end server url](http://xyz.com) (when applicable)
 - [front-end application](http://xyz.com) (when applicable)
 
@@ -14,20 +18,26 @@
 
 #### `.env` requirements (where applicable)
 
-i.e.
+- eslint
+- express
+- jest 
+- method-override
+- supertest 
 
-- `PORT` - Port Number
+
+- `PORT` - 3000
 - `MONGODB_URI` - URL to the running mongo instance/db
 
 #### How to initialize/run your application (where applicable)
 
-- e.g. `npm start`
+- `npm init -y`
+- `npm start`
 
 #### How to use your library (where applicable)
 
 #### Tests
 
-- How do you run tests?
+- npm test
 - Any tests of note?
 - Describe any tests that you did not complete, skipped, etc
 
