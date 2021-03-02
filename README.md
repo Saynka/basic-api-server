@@ -8,7 +8,7 @@
 
 - [first push](https://github.com/Saynka/basic-api-server/pull/1)
 
-- [first submission push]()
+- [first submission push](https://github.com/Saynka/basic-api-server/pull/3/files)
 
 ### Links and Resources
 
