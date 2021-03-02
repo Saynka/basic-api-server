@@ -3,7 +3,8 @@ class CrudModel {
     
     constructor() {
         this.id = 0;
-        this.db = []
+        this.db = [];
+        this.fields = ['name', 'calories', 'type'];
       }
     
       get(id) {

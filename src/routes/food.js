@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const CrudModels = require('../models/food.js');
+const CrudModel = require('../models/food.js');
 const Cruds = require('../models/food.js');
 // here, we instantiate the new things model
 const items = new Cruds();
