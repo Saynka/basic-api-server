@@ -7,8 +7,8 @@ const express = require('express');
 const notFoundHandler = require('./error-handlers/404.js');
 const errorHandler = require('./error-handlers/500.js');
 const logger = require('./middleware/logger.js');
-const crudRoutes = require('./routes/food.js');
-
+const crudRoutesClothes = require('./routes/clothes.js')
+const crudRoutesFood = require('./routes/food.js');
 const app = express();
 
 // Express Global Middleware
@@ -18,7 +18,8 @@ app.use(express.json());
 app.use(logger);
 
 // Use our routes from the routing module...
-app.use(crudRoutes);
+app.use(crudRoutesClothes);
+app.use(crudRoutesFood);
 
 
 // Our Error Handlers -- need to be the last things defined!
