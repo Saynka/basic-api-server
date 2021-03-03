@@ -10,6 +10,8 @@
 
 - [first submission push](https://github.com/Saynka/basic-api-server/pull/3/files)
 
+- [heroku push](https://github.com/Saynka/basic-api-server/compare/dev?expand=1)
+
 ### Links and Resources
 
 - [ci/cd](https://github.com/Saynka/basic-api-server/actions)
