@@ -12,9 +12,9 @@
 
 ### Links and Resources
 
-- [ci/cd](https://github.com/Saynka/basic-api-server/actions) (GitHub Actions)
-- [back-end server url](http://xyz.com) (when applicable)
-- [front-end application](http://xyz.com) (when applicable)
+- [ci/cd](https://github.com/Saynka/basic-api-server/actions)
+<!-- - [back-end server url](http://xyz.com) (when applicable) -->
+- [front-end application](https://api-server-rest.herokuapp.com/)
 
 ### Setup
 
